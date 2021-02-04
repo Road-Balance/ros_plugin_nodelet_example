@@ -1,2 +1,3 @@
-# ros_plugin_nodelet_example
+# ROS Plugin and Nodelet Example
+
 Examples for ROS Plugin and Nodelet
