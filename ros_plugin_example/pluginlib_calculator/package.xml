@@ -49,6 +49,6 @@
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
-	<pluginlib_calculator plugin="${prefix}/calculator_plugins.xml" />
+	  <pluginlib_calculator plugin="${prefix}/calculator_plugins.xml" />
   </export>
 </package>
