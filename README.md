@@ -2,13 +2,18 @@
 
 Examples for ROS Plugin and Nodelet
 
-plugin run
+* plugin run
 
 ```bash
-on going
+# Querying the list of plugins in a package
+$ rospack plugins --attrib=plugin pluginlib_calculator
+
+# Running the plugin loader
+$ roscore
+$ rosrun pluginlib_calculator calculator_loader
 ```
 
-nodelet run
+* nodelet run
 
 ```bash
 $ roscore
@@ -26,6 +31,15 @@ $ rostopic pub /nodelet1/msg_in std_msgs/String "Hello"
 $ rostopic echo /nodelet1/msg_out
 ```
 
+* nodelet launch
+
 ```
+# Terminal 1
 $ roslaunch nodelet_hello_world hello_world.launch
+
+# Terminal 2
+$ rostopic echo /test1/msg_out
+
+# Terminal 3
+$ rostopic pub /test1/msg_in std_msgs/String "Hello"
 ```
